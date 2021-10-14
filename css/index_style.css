@@ -1,0 +1,159 @@
+body,html
+{
+    background: #000000f2;
+    scroll-behavior: unset !important;
+}
+
+.Menu2
+{
+    position: fixed;
+    width: 60px;
+    height: 100vh;
+    background-color: #fff;
+    left: 0px;
+    z-index: 9999;
+}
+.Menu2 i
+{
+    cursor: pointer;
+    transition: .5s;
+}
+.Menu2 i:hover
+{
+    color: #ff655c;
+}
+.Menu2 .fa-times 
+{
+    display: none;
+}
+.social-div
+{
+color: white;
+font-size: 1.1rem;
+position: absolute;
+left: 20px;
+bottom: 50px;
+font-weight: 200; 
+}
+.social-div i
+{
+    padding: 10px;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+.social-div i:hover
+{
+    color: #ff655c;
+}
+.Menu {
+        position: fixed;
+        width: 250px;
+        height: 100vh;
+        left: -250px;
+        background-color: #000;
+        z-index: 9999;
+
+    }
+.Menu a {
+        padding: 0 15px;
+        text-decoration: none;
+        color: white;
+        transition: .5s;
+        font-weight: 200;
+    }
+.Menu a:hover {
+        color: #ff655c;
+    }
+.Menu li {
+        position: fixed;
+        padding-top: 20px;
+        opacity: 0;
+        top:50%
+    }
+.home-input input::placeholder
+{
+    text-align: center;
+}
+.home-input input , .home-input input:focus
+{
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+}
+.hoverBox
+{
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.70);
+    visibility: hidden;
+    transition: all 1s ease 0s;
+}
+.imgBox:hover .hoverBox
+{
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.capBox
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+.capBox p 
+{
+    font-size:1rem;
+}
+.capBox h2
+{
+    font-size: 1.7rem;
+}
+.capBox p:nth-child(3)
+{
+    font-weight: 500;
+}
+.contactUs input::placeholder
+{
+    text-align: center;
+}
+.contactUs input , .contactUs input:focus
+{
+    
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    box-shadow: 0 0 0 0rem rgb(13 110 253 / 25%);
+}
+
+
+@media screen and (max-width: 800px) {
+    .imgBox
+    {
+        margin-left: 3rem;
+    }
+    .contactUs
+{
+    padding-left: 5rem;
+}
+.home-input
+{
+    padding-left: 5rem;
+}
+
+}
